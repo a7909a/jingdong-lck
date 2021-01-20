@@ -1,13 +1,13 @@
 name: 部署到腾讯云函数
 
-on:
+#on:
   schedule:
     - cron: '1 0,15 * * *'
   workflow_dispatch:
   watch:
     types: started
   repository_dispatch:
-    types: 部署到腾讯云函数
+    types: 部署到腾讯云函数main
     
 jobs:
   build:
